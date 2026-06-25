@@ -129,13 +129,14 @@ body{
 
 .panel{
   position:relative;
+  display:block;
   background:linear-gradient(180deg,var(--panel),rgba(7,17,32,.82));
   border:1px solid rgba(51,215,255,.22);
   border-radius:18px;
   padding:30px;
   margin:0 0 24px;
   box-shadow:var(--shadow);
-  overflow:hidden;
+  overflow:visible;
 }
 
 .hero{
@@ -154,6 +155,17 @@ body{
   letter-spacing:.08em;
   margin:0 0 14px;
   text-shadow:0 0 12px rgba(51,215,255,.7);
+}
+
+.system-message{
+  display:block;
+  position:relative;
+  border:1px solid rgba(51,215,255,.28);
+  background:rgba(51,215,255,.07);
+  border-radius:14px;
+  padding:16px 18px;
+  margin:14px 0 22px;
+  color:#d9f2ff;
   clear:both;
 }
 
@@ -247,7 +259,7 @@ p{ margin:0 0 14px; }
   padding:18px 18px 18px 82px;
 }
 
-.steps > div > b{
+.step-num{
   position:absolute;
   left:20px;
   top:20px;
@@ -257,7 +269,7 @@ p{ margin:0 0 14px; }
   display:flex;
   align-items:center;
   justify-content:center;
-  background:var(--accent);
+  background:#33d7ff;
   color:#00101a;
   font-size:20px;
   font-weight:900;
@@ -272,6 +284,7 @@ table{
   margin:18px 0;
   border:1px solid rgba(51,215,255,.2);
   border-radius:12px;
+  overflow:hidden;
 }
 
 th,td{
@@ -310,7 +323,10 @@ th{
 }
 
 .scale small{
+  display:block;
+  margin-top:4px;
   font-size:12px;
+  line-height:1.25;
   color:var(--muted);
 }
 
@@ -388,34 +404,4 @@ dd{ margin:0; }
   h1{ font-size:40px; }
 
   h2{ font-size:28px; }
-}
-
-section,
-.panel,
-.card,
-.notice,
-.example,
-.steps,
-.steps > div{
-  position: static !important;
-  float: none !important;
-  clear: both !important;
-  transform: none !important;
-}
-
-.panel{
-  display: block !important;
-  height: auto !important;
-  min-height: unset !important;
-  overflow: visible !important;
-}
-
-.system-line,
-h1,
-h2,
-h3,
-p{
-  display: block !important;
-  position: static !important;
-  clear: both !important;
 }
