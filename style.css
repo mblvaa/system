@@ -240,24 +240,29 @@ p{ margin:0 0 14px; }
 
 .steps > div{
   position:relative;
-  min-height:84px;
+  min-height:96px;
   background:rgba(7,22,42,.72);
   border:1px solid rgba(51,215,255,.16);
   border-radius:14px;
-  padding:18px 18px 18px 72px;
+  padding:18px 18px 18px 82px;
 }
 
 .steps > div > b{
   position:absolute;
-  left:18px;
-  top:18px;
-  width:36px;
-  height:36px;
+  left:20px;
+  top:20px;
+  width:42px;
+  height:42px;
   border-radius:50%;
-  display:grid;
-  place-items:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   background:var(--accent);
   color:#00101a;
+  font-size:20px;
+  font-weight:900;
+  line-height:1;
+  z-index:2;
   box-shadow:0 0 16px rgba(51,215,255,.6);
 }
 
