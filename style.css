@@ -384,3 +384,33 @@ dd{ margin:0; }
 
   h2{ font-size:28px; }
 }
+
+section,
+.panel,
+.card,
+.notice,
+.example,
+.steps,
+.steps > div{
+  position: static !important;
+  float: none !important;
+  clear: both !important;
+  transform: none !important;
+}
+
+.panel{
+  display: block !important;
+  height: auto !important;
+  min-height: unset !important;
+  overflow: visible !important;
+}
+
+.system-line,
+h1,
+h2,
+h3,
+p{
+  display: block !important;
+  position: static !important;
+  clear: both !important;
+}
