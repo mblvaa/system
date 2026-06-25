@@ -31,7 +31,7 @@ function updateActiveLink() {
     );
   });
 
-  toTop.classList.toggle('show', window.scrollY > 500);
+  toTop?.classList.toggle('show', window.scrollY > 500);
 }
 
 window.addEventListener('scroll', updateActiveLink);
